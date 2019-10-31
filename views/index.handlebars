@@ -1,40 +1,49 @@
-<div class="container1 demo">
-   <div class="content">
-      <div id="large-header" class="large-header">
-         <canvas id="demo-canvas"></canvas>
-         <h1 class="main-title"><span class="thin">Peach</span> News</h1>
-      </div>
-   </div>
-</div>
+<div class="d-flex justify-content-center">
+
+<div class="card">
+
+  <div class="card-body">
+ <a href="/save" class="btn btn-primary">Save And Commet</a>
+
+ 
+
+  
+ </div>
+ 
+ </div>
+
+ </div>
 
 
 
 
 <div class="container">
 
- <div class="row">
-  
- {{#each articles}}
- 
+<div class="main">
+
+<div class="row">
+
+{{#each articles}}
+
 <div class="card" style="width: 23rem;">
-  <img src="{{src}}" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">{{title}}
-    </h5>
-    <p class="card-text"> {{info}}</p>
-    <a href="{{link}}" class="btn btn-primary">web site</a>
-    <button type="button" class="btn btn-success save">comment</button>
-  </div>
+<img src="{{src}}" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">{{title}}
+</h5>
+<p class="card-text"> {{info}}</p>
+<a href="{{link}}" class="btn btn-primary">web site</a>
+<button type="button" class="btn btn-success save">comment</button>
 </div>
-    {{/each}}
-
-
+</div>
+{{/each}}
 
 </div>
-    </div>
 
 
 
-    <script>
- 
-    </script>
+
+</div>
+
+
+
+

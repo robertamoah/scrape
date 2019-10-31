@@ -1,15 +1,36 @@
-const mongoose = require("mongoose")
-const Schema = mongoose.Schema;
+var mongoose = require("mongoose");
+var Schema = mongoose.Schema;
 
-const newsBro = new mongoose.Schema({
-  teaser: {type: String},
-  title: {type: String},
-  link: {type:String},
-  notes: [{type: Schema.Types.ObjectId, ref: "Note"}]
-})
+var ArticleSchema = new Schema({
+    title: {
+        type: String,
+        required: true
+    },
+    link: {
+        type: String,
+        required: true
+    },
 
-const Article = mongoose.model("News", newsBro)
+    src:{
+        type: String,
+        required: true
+    },
 
-module.exports =  Article;
+    info:{
+        type: String,
+        required: true
+    },
 
-// there is a delay in send to mongo needs to fix it. work on it..
+    saved: {
+        type: Boolean,
+        default: false
+    },
+    note: {
+        type: Schema.Types.ObjectId,
+        ref: "Note"
+    }
+});
+
+var Article = mongoose.model("Article", ArticleSchema);
+
+module.exports = Article;
