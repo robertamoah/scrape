@@ -1,0 +1,41 @@
+.navbar{
+    height: 5em;
+    width: 100%;
+}
+
+.jumbotron{
+    overflow: auto;
+    color: floralwhite;
+    background-color: darkslateblue;
+}
+
+
+.card, .card-body{
+    width: 80rem !important;
+}
+
+.card{
+    margin-top: 1em;
+}
+
+.delete-note{
+    margin: 1em;
+    padding: 0;
+    overflow-wrap: break-word;
+}
+
+#btn-headlines{
+    margin-right: 1em;
+}
+
+
+body{
+    background-color: cadetblue;
+}
+
+
+@media only screen and (max-width: 328px) {
+  .jumbo-title {
+    font-size: 3.15em;
+  }
+}
